@@ -1,0 +1,137 @@
+// ----------------------------------------------------------------------
+// --- MIXINS defines all your custom mixins
+// ----------------------------------------------------------------------
+
+
+// MEDIAQUERIES
+// -------------------------------------------------------------------
+@mixin respond-to($val, $query) {
+  @media ($val: $query) {
+  	@content;
+  }
+}
+// --- Example ---
+//
+// .element {
+//   float: left;
+//   width: 250px;
+//   @include respond-to(max-width, 700px) { width: 100%; }
+// }
+//
+
+// KEYFRAMES, ANIMATIONS, TRANSITIONS & TRANSFORMS
+// -------------------------------------------------------------------
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+// --- Example ---
+//
+// @include keyframes(slide-down) {
+//   0% { opacity: 1; }
+//   90% { opacity: 0; }
+// }
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+// --- Example ---
+//
+// .element {
+//   width: 100px;
+//   height: 100px;
+//   background: black;
+//   @include animation('slide-down 5s 3');
+// }
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+// --- Example ---
+//
+// a {
+//   color: gray;
+//   @include transition(color .3s ease);
+// }
+
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+@mixin transform-origin($args) {
+  -webkit-transform-origin: $args;
+  -moz-transform-origin: $args;
+  -ms-transform-origin: $args;
+  -o-transform-origin: $args;
+  transform-origin: $args;
+}
+// --- Example ---
+//
+// .element {
+//   color: gray;
+//   @include transform(rotate(45deg));
+// }
+
+// FLEXBOX and COLUMNS
+// -------------------------------------------------------------------
+@mixin display-flex() {
+  display: -webkit-flex;
+  display: flex;
+}
+// --- Example ---
+//
+// .element {
+//   @include display-flex();
+// }
+
+@mixin flex-flow($args) {
+  -webkit-flex-flow: $args;
+  flex-flow: $args;
+}
+// --- Example ---
+//
+// .element {
+//   @include flex-flow(row wrap);
+// }
+
+@mixin flex($args) {
+  -webkit-flex: $args;
+  -ms-flex: $args;
+  flex: $args;
+}
+// --- Example ---
+//
+// .element {
+//   @include flex(1 1 100%);
+// }
+
+// GRID LAYOUT
+// -------------------------------------------------------------------
+@mixin display-grid() {
+  display: -ms-grid;
+  display: grid;
+}

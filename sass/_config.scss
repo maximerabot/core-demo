@@ -1,0 +1,48 @@
+// TYPOGRAPHY
+// --------------------------------------------------
+$type_base_font: Georgia, serif;
+$type_head_font: Helvetica, sans-serif;
+
+// Mobile
+$type_base_font-size_mobile: 14px;
+$type_head1_font-size_mobile: 40px;
+$type_head2_font-size_mobile: 25px;
+$type_head3_font-size_mobile: 16px;
+$type_head4_font-size_mobile: 14px;
+
+// Desktop
+$type_base_font-size_desktop: 16px;
+$type_head1_font-size_desktop: 80px;
+$type_head2_font-size_desktop: 45px;
+$type_head3_font-size_desktop: 33px;
+$type_head4_font-size_desktop: 28px;
+
+// Font Weights
+$type_base_font-weight: 400;
+$type_head_font-weight: 700;
+
+// Line Height
+$type_base_line-height: 1.5em;
+$type_head_line-height: 1.3em;
+
+// COLORS
+// --------------------------------------------------
+$color_primary: #20C0F1;
+
+// Text Colors
+$color_base: #111;
+$color_head: #111;
+
+
+// GRID SYSTEM
+// --------------------------------------------------
+$max-website-width: 1200px;
+$grid_columns_mobile: 6;
+$grid_columns_desktop: 12;
+$grid_columns-gutter_mobile: 15px;
+$grid_columns-gutter_desktop: 20px;
+
+// BREAKPOINTS
+// --------------------------------------------------
+$breakpoint_tablet: 768px;
+$breakpoint_desktop: 1024px;

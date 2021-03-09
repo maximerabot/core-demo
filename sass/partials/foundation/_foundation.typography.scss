@@ -1,0 +1,59 @@
+body {
+  font-family: $type_base_font;
+  font-size: $type_base_font-size_mobile;
+  font-weight: $type_base_font-weight;
+  text-rendering: optimizelegibility;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    font-size: $type_base_font-size_desktop;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $type_head_font;
+  font-weight: $type_head_font-weight;
+  line-height: $type_head_line-height;
+  margin: 0;
+}
+
+h1 {
+  font-size: $type_head1_font-size_mobile;
+  margin-bottom: 0.5em;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    font-size: $type_head1_font-size_desktop;
+  }
+}
+
+h2 {
+  font-size: $type_head2_font-size_mobile;
+  margin-bottom: 1em;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    font-size: $type_head2_font-size_desktop;
+  }
+}
+
+h3 {
+  font-size: $type_head3_font-size_mobile;
+  margin-bottom: 0.4em;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    font-size: $type_head3_font-size_desktop;
+  }
+}
+
+h4 {
+  font-size: $type_head4_font-size_mobile;
+  margin-bottom: 0.5em;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    font-size: $type_head4_font-size_desktop;
+  }
+}
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 2em;
+  line-height: $type_base_line-height;
+  max-width: 570px;
+}

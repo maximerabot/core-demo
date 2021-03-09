@@ -1,0 +1,41 @@
+// BOX-MODEL: see http://paulirish.com/2012/box-sizing-border-box-ftw/
+// ---------------------------------------------------------------------
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+a {
+  @include transition(all 0.3s ease-out);
+  &:hover {
+    
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  display: block;
+}

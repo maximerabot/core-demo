@@ -1,0 +1,23 @@
+// ----------------------------------------------------------------------
+// --- KEYFRAMES lists all your keyframe functions
+// ----------------------------------------------------------------------
+
+
+// KEYFRAMES --------------------------------
+@include keyframes(draw) {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@include keyframes(wind) {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}

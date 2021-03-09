@@ -1,0 +1,54 @@
+// Default pages
+.page {
+  padding: 50px 0 150px;
+}
+
+// Sections
+section {
+  padding: 50px 0;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    padding: 70px 0;
+  }
+}
+
+// Container
+.container {
+  max-width: $max-website-width;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+// Grid System
+.grid-system {
+  @include display-grid();
+  grid-template-columns: repeat($grid_columns_mobile, 1fr);
+  grid-gap: $grid_columns-gutter_mobile;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    grid-template-columns: repeat($grid_columns_desktop, 1fr);
+    grid-gap: $grid_columns-gutter_desktop;
+  }
+  &.three {
+    grid-template-columns: repeat(1, 1fr);
+    @include respond-to(min-width, $breakpoint_tablet) {
+      grid-template-columns: repeat(3, 1fr);  
+    }
+  }
+  &.four {
+    grid-template-columns: repeat(1, 1fr);
+    @include respond-to(min-width, $breakpoint_tablet) {
+      grid-template-columns: repeat(4, 1fr);  
+    }
+  }
+}
+
+// Helper
+.visually-hidden {
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
