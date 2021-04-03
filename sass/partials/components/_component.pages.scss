@@ -1,0 +1,57 @@
+.hero {
+  background-image: url('/images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    height: 500px;
+  }
+}
+
+.intro {
+  @include respond-to(min-width, $breakpoint_tablet) {
+    text-align: center;
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+
+// STYLEGUIDE
+// ----------------------------
+.color-style {
+  display: inline-block;
+  background: #eee;
+  width: 300px;
+  padding: 15px;
+  height: 60px;
+  margin: 10px 10px 7px 0;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  &.primary-light { background: $color_primary_light; }
+  &.primary-default { background: $color_primary_default; }
+  &.primary-dark { background: $color_primary_dark; }
+
+  &.secondary-light { background: $color_secondary_light; }
+  &.secondary-default { background: $color_secondary_default; }
+  &.secondary-dark { background: $color_secondary_dark; }
+
+  &.tertiary-light { background: $color_tertiary_light; }
+  &.tertiary-default { background: $color_tertiary_default; }
+  &.tertiary-dark { background: $color_tertiary_dark; }
+
+  &.grey-100 { background: $color_grey_100; }
+  &.grey-200 { background: $color_grey_200; }
+  &.grey-300 { background: $color_grey_300; }
+  &.grey-400 { background: $color_grey_400; }
+  &.grey-500 { background: $color_grey_500; }
+  &.grey-600 { background: $color_grey_600; }
+  &.grey-700 { background: $color_grey_700; }
+  &.grey-800 { background: $color_grey_800; }
+  &.grey-900 { background: $color_grey_900; }
+}
+

@@ -7,7 +7,7 @@
 section {
   padding: 50px 0;
   @include respond-to(min-width, $breakpoint_tablet) {
-    padding: 70px 0;
+    padding: 80px 0;
   }
 }
 
@@ -15,7 +15,10 @@ section {
 .container {
   max-width: $max-website-width;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    padding: 0 40px;
+  }
 }
 
 // Grid System
@@ -30,7 +33,7 @@ section {
   &.three {
     grid-template-columns: repeat(1, 1fr);
     @include respond-to(min-width, $breakpoint_tablet) {
-      grid-template-columns: repeat(3, 1fr);  
+      grid-template-columns: repeat(3, 1fr); 
     }
   }
   &.four {

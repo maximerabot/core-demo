@@ -1,21 +1,21 @@
 // TYPOGRAPHY
 // --------------------------------------------------
-$type_base_font: Georgia, serif;
-$type_head_font: Helvetica, sans-serif;
+$type_base_font: "IBM Plex Sans", sans-serif;
+$type_head_font: "IBM Plex Sans", sans-serif;
 
-// Mobile
-$type_base_font-size_mobile: 14px;
+// Mobile Sizes
+$type_base_font-size_mobile: 16px;
 $type_head1_font-size_mobile: 40px;
-$type_head2_font-size_mobile: 25px;
-$type_head3_font-size_mobile: 16px;
+$type_head2_font-size_mobile: 30px;
+$type_head3_font-size_mobile: 20px;
 $type_head4_font-size_mobile: 14px;
 
-// Desktop
-$type_base_font-size_desktop: 16px;
-$type_head1_font-size_desktop: 80px;
-$type_head2_font-size_desktop: 45px;
-$type_head3_font-size_desktop: 33px;
-$type_head4_font-size_desktop: 28px;
+// Desktop Sizes
+$type_base_font-size_desktop: 20px;
+$type_head1_font-size_desktop: 60px;
+$type_head2_font-size_desktop: 40px;
+$type_head3_font-size_desktop: 30px;
+$type_head4_font-size_desktop: 20px;
 
 // Font Weights
 $type_base_font-weight: 400;
@@ -27,14 +27,39 @@ $type_head_line-height: 1.3em;
 
 // COLORS
 // --------------------------------------------------
-$color_primary: #20C0F1;
+// Main Colors
+$color_primary_default: #2BFEBA;
+$color_primary_light: #C2FFEB;
+$color_primary_dark: #01E99F;
+$color_secondary_default: #D22DED;
+$color_secondary_light: #E172F3;
+$color_secondary_dark: #B011CA;
+$color_tertiary_default: #151B24;
+$color_tertiary_light: #2D3A4D;
+$color_tertiary_dark: #000000;
+
+// Grey Colors
+$color_grey_100: #F9FAFA;
+$color_grey_200: #F6F7F7;
+$color_grey_300: #E9E9EB;
+$color_grey_400: #CFD0D3;
+$color_grey_500: #A9A9AC;
+$color_grey_600: #797980;
+$color_grey_700: #60626C;
+$color_grey_800: #41454C;
+$color_grey_900: #1E2229;
 
 // Text Colors
-$color_base: #111;
-$color_head: #111;
+$color_base: $color_tertiary_default;
+$color_head: $color_tertiary_default;
 
 
-// GRID SYSTEM
+// Breakpoints
+// --------------------------------------------------
+$breakpoint_tablet: 768px;
+$breakpoint_desktop: 1024px;
+
+// Grid System
 // --------------------------------------------------
 $max-website-width: 1200px;
 $grid_columns_mobile: 6;
@@ -42,7 +67,11 @@ $grid_columns_desktop: 12;
 $grid_columns-gutter_mobile: 15px;
 $grid_columns-gutter_desktop: 20px;
 
-// BREAKPOINTS
+// Spacers
 // --------------------------------------------------
-$breakpoint_tablet: 768px;
-$breakpoint_desktop: 1024px;
+$spacer-1: 5px;
+$spacer-2: 10px;
+$spacer-3: 15px;
+$spacer-4: 20px;
+$spacer-5: 25px;
+$spacer-6: 30px;

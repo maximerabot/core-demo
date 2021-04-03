@@ -1,0 +1,39 @@
+header {
+  padding: 10px 0 15px;
+  display: flex;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    padding: 15px 0 20px;
+    display: block;
+  }
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  padding: 15px 10px 7px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: $color_secondary_dark;
+  border-top: 1px solid #fff;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    margin-top: -25px;
+    padding: 0;
+    float: right;
+    position: static;
+    background: none;
+    border: none;
+    width: auto;
+  }
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      @include respond-to(min-width, $breakpoint_tablet) {
+        font-size: 16px;
+      }
+    }
+  }
+}

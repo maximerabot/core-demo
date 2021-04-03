@@ -6,7 +6,10 @@
   box-sizing: border-box;
 }
 
-body { }
+body {
+  background: $color_tertiary_default;
+  color: #fff;
+}
 
 ul, ol {
   margin: 0;
@@ -21,12 +24,15 @@ li {
 hr {
   border: none;
   border-bottom: 1px solid;
+  margin: 50px 0;
+  padding: 0;
 }
 
 a {
   @include transition(all 0.3s ease-out);
+  color: #fff;
   &:hover {
-    
+    color: $color_primary_default;
   }
 }
 

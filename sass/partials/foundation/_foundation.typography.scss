@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: $type_head1_font-size_mobile;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
   @include respond-to(min-width, $breakpoint_tablet) {
     font-size: $type_head1_font-size_desktop;
   }
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   font-size: $type_head2_font-size_mobile;
-  margin-bottom: 1em;
+  margin-bottom: 0.4em;
   @include respond-to(min-width, $breakpoint_tablet) {
     font-size: $type_head2_font-size_desktop;
   }
@@ -36,7 +36,7 @@ h2 {
 
 h3 {
   font-size: $type_head3_font-size_mobile;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
   @include respond-to(min-width, $breakpoint_tablet) {
     font-size: $type_head3_font-size_desktop;
   }
@@ -44,7 +44,7 @@ h3 {
 
 h4 {
   font-size: $type_head4_font-size_mobile;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
   @include respond-to(min-width, $breakpoint_tablet) {
     font-size: $type_head4_font-size_desktop;
   }
@@ -55,5 +55,5 @@ p {
   margin-top: 0;
   margin-bottom: 2em;
   line-height: $type_base_line-height;
-  max-width: 570px;
+  max-width: 620px;
 }
