@@ -729,7 +729,7 @@ nav li a {
 }
 
 footer {
-  background: #000000;
+  background: #090C10;
   font-size: 14px;
   padding: 30px 0;
 }
@@ -793,7 +793,7 @@ footer {
   background: #151B24;
 }
 .color-style.tertiary-dark {
-  background: #000000;
+  background: #090C10;
 }
 .color-style.grey-100 {
   background: #F9FAFA;
@@ -825,7 +825,7 @@ footer {
 
 .card {
   padding: 15px;
-  border: 1px solid #fff;
+  background: #090C10;
 }
 .card img {
   margin-bottom: 10px;
