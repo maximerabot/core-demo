@@ -1,6 +1,7 @@
 .card {
   padding: $spacer-3;
   background: $color_tertiary_dark;
+  max-width: 360px;
   img {
     margin-bottom: $spacer-2;
     @include transition(all 0.1s ease-out);

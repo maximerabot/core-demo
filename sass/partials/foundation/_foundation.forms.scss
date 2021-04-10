@@ -1,0 +1,57 @@
+.form-element {
+  display: block;
+  margin-bottom: $spacer-4;
+}
+
+label {
+  color: $color_grey_300;
+  font-size: 14px;
+  display: block;
+  margin-bottom: $spacer-1;
+}
+
+input {
+  height: 54px;
+  background: none;
+  border: 2px solid $color_grey_300;
+  padding: $spacer-3;
+  display: block;
+  width: 100%;
+  &:focus {
+    border: 2px solid $color_primary_default;
+    background: rgba(255,255,255,0.1);
+    border-radius: 0;
+    outline: none;
+  }
+  @include respond-to(min-width, $breakpoint_tablet) {
+    width: auto;
+  }
+}
+
+textarea {
+  background: none;
+  border: 2px solid $color_grey_300;
+  padding: $spacer-3;
+  display: block;
+  width: 100%;
+  &:focus {
+    border: 2px solid $color_primary_default;
+    background: rgba(255,255,255,0.1);
+    border-radius: 0;
+    outline: none;
+  }
+  @include respond-to(min-width, $breakpoint_tablet) {
+    width: auto;
+  }
+}
+
+input[type="submit"] {
+  background: $color_primary_default;
+  border: none;
+  padding: 0 50px;
+  color: $color_tertiary_light;
+  display: block;
+  @include respond-to(min-width, $breakpoint_tablet) {
+    width: auto;
+  }
+}
