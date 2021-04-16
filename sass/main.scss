@@ -17,8 +17,6 @@
 // --------------------------------------------------
 @import "partials/foundation/foundation.base";
 @import "partials/foundation/foundation.typography";
-@import "partials/foundation/foundation.buttons";
-@import "partials/foundation/foundation.forms";
 
 // LAYOUT
 // --------------------------------------------------
@@ -26,6 +24,8 @@
 
 // COMPONENTS
 // --------------------------------------------------
+@import "partials/components/component.buttons";
+@import "partials/components/component.forms";
 @import "partials/components/component.header";
 @import "partials/components/component.footer";
 @import "partials/components/component.pages";
